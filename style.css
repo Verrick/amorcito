@@ -1,0 +1,26 @@
+.love{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background: red;
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+
+}
+
+.love::after,.love::before{
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+}
+.love::before{
+    top: 0;
+    left: -55px
+}
+.love::after{
+    top: -55px
+}
